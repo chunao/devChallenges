@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Recipe page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+  <!--
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    -->
+  <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+   crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="{% static 'Recipe_page\recipe_page.css' %}" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h2 class="playfair" style="font-weight: 700;">Classic Cheesecake Recipe</h2>
+        <div>
+         <img src="{% static 'Recipe_page\6dots.svg' %}" alt="6dots"/>
+         <h6 class="montserrat" style="padding-left: 20px; margin-top: -20px; font-style: italic;">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-1 mt-3">
+      <div class="col">
+       <img src="{% static 'Recipe_page\photo1.png' %}" class="img-fluid" alt="cake_image" />
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-3 offset-md-2 order-md-2 mt-3">
+        <div class="shadow-sm" style="border-radius: 6px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 col-md-12 my-3 offset-lg-2 offset-xl-3" style="padding: 0;">
+                <img src="{% static 'Recipe_page\local_dining-white-18dp.svg' %}" alt="dining" />
+                <div class="montserrat" style="padding-left: 50px; margin-top: -38px; ">
+                  <h6 style="font-size: 12px; color: #BDBDBD;">YIELDS</h6>
+                  <h6 style="margin-top: -5px; color: #F2994A;">12 servings</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-4 col-md-12 my-3 offset-lg-2 offset-xl-3" style="padding: 0;">
+                <img src="{% static 'Recipe_page\query_builder-24px.svg' %}" alt="timer" />
+                <div class="montserrat" style="padding-left: 50px; margin-top: -38px; ">
+                  <h6 style="font-size: 12px; color: #BDBDBD;">PREP TIME</h6>
+                  <h6 style="margin-top: -5px;">45 minutes</h6>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 my-3 offset-lg-2 offset-xl-3" style="padding: 0;">
+                <img src="{% static 'Recipe_page\query_builder-24px.svg' %}" alt="timer" />
+                <div class="montserrat" style="padding-left: 50px; margin-top: -38px; ">
+                  <h6 style="font-size: 12px; color: #BDBDBD;">COOK TIME</h6>
+                  <h6 style="margin-top: -5px;">1 hour</h6>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 my-3 offset-lg-2 offset-xl-3" style="padding: 0;">
+                <img src="{% static 'Recipe_page\query_builder-24px.svg' %}" alt="timer" />
+                <div class="montserrat" style="padding-left: 50px; margin-top: -38px; ">
+                  <h6 style="font-size: 12px; color: #BDBDBD;">TOTAL TIME</h6>
+                  <h6 style="margin-top: -5px;">7,75 hours</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 order-md-1">
+        <h4 class="playfair">Ingredients</h4>
+        <h5 class="my-4 playfair" style="font-style: italic;">Graham Cracker Crust</h5>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-1">
+          <label class="custom-control-label montserrat" for="custom-check-1">1 and 1/2 cups (150g)
+            <span style="font-weight: 700;">graham cracker crumbs
+            </span>
+               (about 10 full sheet graham crackers)</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-2">
+          <label class="custom-control-label montserrat" for="custom-check-2">5 Tablespoons (70g)
+            <span style="font-weight: 700;">unsalted butter</span>
+            , melted</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-3">
+          <label class="custom-control-label montserrat" for="custom-check-3">1/4 cup (50g)
+            <span style="font-weight: 700;">granulated sugar</span></label>
+        </div>
+        <h5 class="my-4 playfair" style="font-style: italic;">Cheesecake</h5>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-4">
+          <label class="custom-control-label montserrat" for="custom-check-4">four 8-ounce blocks (904g) full-fat
+            <span style="font-weight: 700;">cream cheese</span>
+          , softened to room temperature</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-5">
+          <label class="custom-control-label montserrat" for="custom-check-5">1 cup (200g)
+            <span style="font-weight: 700;">granulated sugar</span>
+            </label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-6">
+          <label class="custom-control-label montserrat" for="custom-check-6">1 cup (240g) full-fat
+            <span style="font-weight: 700;">sour cream</span>
+          , at room temperature</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-7">
+          <label class="custom-control-label montserrat" for="custom-check-7">1 teaspoon
+            <span style="font-weight: 700;">pure vanilla extract</span>
+            </label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-8">
+          <label class="custom-control-label montserrat" for="custom-check-8">2 teaspoons
+            <span style="font-weight: 700;">fresh lemon juice</span>
+          (optional, but recommended)</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-9">
+          <label class="custom-control-label montserrat" for="custom-check-9">3 large
+            <span style="font-weight: 700;">eggs</span>
+            , at room temperature</label>
+        </div>
+        <div class="custom-control custom-checkbox my-1">
+          <input type="checkbox" class="custom-control-input" id="custom-check-10">
+          <label class="custom-control-label montserrat" for="custom-check-10">topping suggestions:
+            <span style="font-style: italic;">salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</span>
+            (recipe in notes)</label>
+        </div>
+        <h4 class="my-3 playfair">Instructions</h4>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            1
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;">Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            2
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;"><span style="font-weight: 700;">Make the crust:</span> Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling.</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            3
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;"><span style="font-weight: 700;">Make the filling:</span> Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            4
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;"><span style="font-weight: 700;">Prepare the simple water bath (see note)</span> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Place the pan inside of a large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            5
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;">Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or overnight.</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            6
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;">Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice.</h6>
+        </div>
+        <div class="my-4">
+          <span class="playfair" style="color: white; font-weight: 700; font-size: 24px; background-color: #F2994A; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.2em; border-radius: 6px;">
+            7
+          </span>
+          <h6 class="montserrat" style="padding-left: 50px; margin-top: -32px;">Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.</h6>
+        </div>
+        <h6 class="my-5 montserrat" style="color: #BDBDBD; font-style: italic;">Source: https://sallysbakingaddition.com/classic-cheesecake/</h6>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="text-center">
+  <div class="container mt-5">
+    <p class="text-black">chuna @ DevChallenges.io</p>
+  </div>
+</footer>
+</html>
